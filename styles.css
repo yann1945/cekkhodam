@@ -229,6 +229,22 @@ footer p {
   animation: heartbeat 1s infinite;
 }
 
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #ffa500;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  animation: spin 1s linear infinite;
+  display: none; /* Sembunyikan spinner secara default */
+}
+
+
 @keyframes heartbeat {
   0%, 100% {
     transform: scale(1);
