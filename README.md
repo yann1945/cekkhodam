@@ -1,16 +1,16 @@
-# ☠️ **Cek Khodam** ☠️  
-**"Temukan energi spiritual dalam dirimu dengan satu klik!"**  
+# ☠️ **Cek Gabuts** ☠️  
+**Website Gabut untuk mengecek sesuatu!"**  
 
 ### 🚀 **Deskripsi**
-Cek Khodam adalah aplikasi web interaktif yang membantu pengguna mengetahui **khodam** mereka berdasarkan nama. Dengan antarmuka yang menarik dan teknologi modern, aplikasi ini dirancang untuk memberikan pengalaman yang menyenangkan dan bermanfaat.  
+Cek Gabut adalah aplikasi web interaktif yang membantu pengguna mengetahui sesuatu seperti **khodam, Jodoh, Dan Custom** mereka berdasarkan nama. Dengan antarmuka yang menarik dan teknologi modern, aplikasi ini dirancang untuk memberikan pengalaman yang menyenangkan dan bermanfaat.  
 
 ---
 
 ## 🌟 **Fitur Utama**
 1. **🔍 Analisis Nama:**
    - Masukkan nama Anda dan dapatkan **Khodam** secara acak, lengkap dengan deskripsi uniknya.  
-2. **✨ Loading Spinner Animasi:**
-   - Memberikan simulasi proses loading untuk meningkatkan pengalaman pengguna.  
+2. **✨ Ui Unik:**
+   - Sangat bagus dan Ramah Pengguna.  
 3. **🎲 Khodam Unik:**
    - Ada ratusan pilihan **khodam** dengan deskripsi kreatif yang membuat Anda tersenyum.  
 4. **🔄 Reset Form:**
@@ -34,17 +34,14 @@ Cek Khodam adalah aplikasi web interaktif yang membantu pengguna mengetahui **kh
    Jalankan file `index.html` di browser favorit Anda.  
 2. **Masukkan Nama**  
    Ketik nama Anda di kolom input dan klik tombol **Cek Khodam**.  
-3. **Tunggu Hasil**  
-   Loading spinner akan muncul selama 2 detik, dan hasilnya langsung ditampilkan.  
-4. **Coba Lagi**  
-   Gunakan tombol **Cek Lagi** untuk mengulang proses.
+4. **Kembali**  
+   Gunakan tombol **Kembali** untuk kembali ke halaman utama.
 
 ---
 
 ## 🎨 **Desain & UX**
-- **Dark Mode** dengan latar belakang gelap untuk mengurangi silau dan meningkatkan fokus.  
 - **Hover Effect** pada tombol dengan animasi lembut untuk pengalaman interaktif.  
-- **Spinner Animasi** untuk memberikan kesan proses berjalan di latar belakang.  
+- **Popup** Agar simpel.  
 
 ---
 
