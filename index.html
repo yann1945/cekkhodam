@@ -26,36 +26,36 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
-        function cekKhodam() {
-            const nameInput = document.getElementById('nameInput').value;
-            if (!nameInput) {
-                Swal.fire({
-                    title: 'GAK BOLEH KOSONG!😡',
-                    icon: 'error',
-                    confirmButtonText: 'OK'
-                });
-                return;
-            }
-            document.getElementById('loading').style.display = 'block'; // Tampilkan spinner
-            setTimeout(() => {
-                const khodams = [
-                    { name: "Harimau Putih", meaning: "Kamu kuat dan berani seperti harimau, karena pendahulumu mewariskan kekuatan besar padamu." },
-                    { name: "Lampu Tertidur", meaning: "Terlihat ngantuk tapi selalu memberikan cahaya yang hangat" },
-                    // Tambahkan khodam lainnya sesuai kebutuhan
-                ];
-                const khodam = khodams[Math.floor(Math.random() * khodams.length)];
-                
-                // Menampilkan hasil dalam bentuk popup
-                Swal.fire({
-                    title: `Khodam: ${khodam.name}`,
-                    text: khodam.meaning,
-                    icon: 'info',
-                    confirmButtonText: 'OK'
-                });
+function cekKhodam() {
+    const nameInput = document.getElementById("nameInput").value;
+    if (!nameInput) {
+        Swal.fire({
+            title: "GAK BOLEH KOSONG BEB!😡",
+            icon: "error",
+            confirmButtonText: "OK",
+        });
+        return;
+    }
+    document.getElementById("loading").style.display = "block"; // Tampilkan spinner
+    setTimeout(() => {
+        const khodams = [
+            { name: "Harimau Putih", meaning: "Kamu kuat dan berani seperti harimau, karena pendahulumu mewariskan kekuatan besar padamu." },
+            { name: "Lampu Tertidur", meaning: "Terlihat ngantuk tapi selalu memberikan cahaya yang hangat" },
+            // Tambahkan khodam lainnya sesuai kebutuhan
+        ];
+        const khodam = khodams[Math.floor(Math.random() * khodams.length)];
+        
+        // Menampilkan hasil dalam bentuk popup dengan format title yang diinginkan
+        Swal.fire({
+            title: `Khodam ${nameInput} Adalah ${khodam.name}`, // Format title yang diinginkan
+            text: khodam.meaning,
+            icon: 'info',
+            confirmButtonText: 'OK'
+        });
 
-                document.getElementById('loading').style.display = 'none'; // Sembunyikan spinner
-            }, 2000); // Delay untuk simulasi loading
-        }
+        document.getElementById("loading").style.display = "none"; // Sembunyikan spinner
+    }, 2000); // Delay untuk simulasi loading
+}
 
         function resetForm() {
             document.getElementById('nameInput').value = '';
