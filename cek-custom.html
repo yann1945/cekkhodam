@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Custom</title>
+    <link rel="shortcut icon" href="./assets/diddy-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Link ke file CSS yang kamu berikan -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cek Gabutszz</h1>
+        <label for="nameInput">Pilih Mau Cek Apa</label>
+        <input type="text" id="name1" placeholder="Masukan Nama Mu" />
+        <input type="text" id="name2" placeholder="Masukkan Nama Jodoh Mu" />
+        <button onclick="cekJodoh()">Cek Jodoh</button>
+        </a>
+        <a href="./index.html" style="text-decoration: none;">
+            <button>Kembali</button>
+        </a>
+    </div>
+<footer>
+    <p>Dibuat oleh <a href="https://yannexdi.vercel.app" target="_blank" style="text-decoration: none; color: inherit;"><b>YannXD</b></a> dengan <span class="heart">❤️</span></p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        function cekJodoh() {
+            const name1 = document.getElementById("name1").value;
+            const name2 = document.getElementById("name2").value;
+
+            if (!name1 || !name2) {
+                Swal.fire({
+                    title: "Error!",
+                    text: "Kedua nama harus diisi!",
+                    icon: "error",
+                    confirmButtonText: "OK"
+                });
+                return;
+            }
+
+            // Menghitung persentase jodoh secara acak
+            const percentage = Math.floor(Math.random() * 101);
+
+            // Menampilkan hasil dalam popup
+            Swal.fire({
+                title: `Hasil Cek ${name2}`,
+                text: `Untuk ${name1} Adalah ${percentage}%`,
+                icon: 'info',
+                confirmButtonText: 'OK'
+            });
+        }
+    </script>
+</body>
+
+</html>
